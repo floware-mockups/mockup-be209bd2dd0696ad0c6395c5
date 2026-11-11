@@ -1,0 +1,243 @@
+{
+  "title": "Gestione rimborsi tributi",
+  "description": "Prototipo navigabile per seguire le richieste di rimborso da tributi versati in eccesso, consultare l’istruttoria e monitorare le scadenze dei 180 giorni.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "cruscotto",
+      "title": "Cruscotto",
+      "description": "Panoramica delle pratiche e delle scadenze imminenti.",
+      "metrics": [
+        {
+          "label": "Pratiche aperte",
+          "value": "18"
+        },
+        {
+          "label": "In scadenza entro 30 giorni",
+          "value": "5"
+        },
+        {
+          "label": "Scadute",
+          "value": "2"
+        },
+        {
+          "label": "Importo richiesto",
+          "value": "€ 12.480,00"
+        }
+      ],
+      "columns": [
+        "Numero pratica",
+        "Tributo",
+        "Importo richiesto",
+        "Stato",
+        "Scadenza 180 giorni"
+      ],
+      "rows": [
+        [
+          "RIM-2025-014",
+          "Imposta sui servizi",
+          "€ 640,00",
+          "Istruttoria",
+          "18/06/2025"
+        ],
+        [
+          "RIM-2025-017",
+          "Tassa sulle superfici",
+          "€ 1.280,00",
+          "Ricevuta",
+          "24/06/2025"
+        ],
+        [
+          "RIM-2025-021",
+          "Contributo locale",
+          "€ 395,00",
+          "Determina",
+          "29/06/2025"
+        ],
+        [
+          "RIM-2025-024",
+          "Imposta sui servizi",
+          "€ 2.100,00",
+          "Liquidazione",
+          "03/07/2025"
+        ],
+        [
+          "RIM-2025-029",
+          "Tassa sulle superfici",
+          "€ 780,00",
+          "Istruttoria",
+          "08/07/2025"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "pratiche",
+      "title": "Pratiche di rimborso",
+      "description": "Elenco consultabile con filtri per stato e tributo; le righe più vicine alla scadenza sono evidenziate.",
+      "metrics": [
+        {
+          "label": "Totale pratiche",
+          "value": "18"
+        },
+        {
+          "label": "In istruttoria",
+          "value": "7"
+        },
+        {
+          "label": "Completate",
+          "value": "4"
+        }
+      ],
+      "columns": [
+        "Numero pratica",
+        "Tributo",
+        "Importo richiesto",
+        "Esito istruttoria",
+        "Stato",
+        "Data ricezione",
+        "Scadenza 180 giorni"
+      ],
+      "rows": [
+        [
+          "RIM-2025-014",
+          "Imposta sui servizi",
+          "€ 640,00",
+          "Documenti da verificare",
+          "Istruttoria",
+          "20/12/2024",
+          "18/06/2025"
+        ],
+        [
+          "RIM-2025-017",
+          "Tassa sulle superfici",
+          "€ 1.280,00",
+          "In attesa di esame",
+          "Ricevuta",
+          "26/12/2024",
+          "24/06/2025"
+        ],
+        [
+          "RIM-2025-021",
+          "Contributo locale",
+          "€ 395,00",
+          "Favorevole",
+          "Determina",
+          "31/12/2024",
+          "29/06/2025"
+        ],
+        [
+          "RIM-2025-024",
+          "Imposta sui servizi",
+          "€ 2.100,00",
+          "Favorevole",
+          "Liquidazione",
+          "04/01/2025",
+          "03/07/2025"
+        ],
+        [
+          "RIM-2025-029",
+          "Tassa sulle superfici",
+          "€ 780,00",
+          "In attesa di esame",
+          "Istruttoria",
+          "09/01/2025",
+          "08/07/2025"
+        ],
+        [
+          "RIM-2025-032",
+          "Contributo locale",
+          "€ 520,00",
+          "Non concluso",
+          "Istruttoria",
+          "15/01/2025",
+          "14/07/2025"
+        ],
+        [
+          "RIM-2025-036",
+          "Imposta sui servizi",
+          "€ 1.450,00",
+          "Favorevole",
+          "Determina",
+          "21/01/2025",
+          "20/07/2025"
+        ],
+        [
+          "RIM-2025-041",
+          "Tassa sulle superfici",
+          "€ 310,00",
+          "Documentazione integrativa richiesta",
+          "Ricevuta",
+          "28/01/2025",
+          "27/07/2025"
+        ]
+      ],
+      "form": [
+        "Numero pratica",
+        "Tributo",
+        "Importo richiesto",
+        "Esito istruttoria",
+        "Stato",
+        "Data ricezione",
+        "Scadenza 180 giorni"
+      ]
+    },
+    {
+      "id": "dettaglio-pratica",
+      "title": "Dettaglio pratica",
+      "description": "Consultazione dei dati e dei passaggi di lavorazione della pratica selezionata.",
+      "metrics": [
+        {
+          "label": "Importo richiesto",
+          "value": "€ 640,00"
+        },
+        {
+          "label": "Giorni alla scadenza",
+          "value": "12"
+        },
+        {
+          "label": "Passaggi completati",
+          "value": "2 su 4"
+        }
+      ],
+      "columns": [
+        "Passaggio",
+        "Data",
+        "Esito",
+        "Note"
+      ],
+      "rows": [
+        [
+          "Ricevuta",
+          "20/12/2024",
+          "Completato",
+          "Richiesta registrata da Ente Lumo."
+        ],
+        [
+          "Istruttoria",
+          "12/02/2025",
+          "In corso",
+          "Verifica dei versamenti in eccesso."
+        ],
+        [
+          "Determina",
+          "—",
+          "Da avviare",
+          "In attesa della conclusione dell’istruttoria."
+        ],
+        [
+          "Liquidazione",
+          "—",
+          "Da avviare",
+          "Da pianificare dopo la determina."
+        ]
+      ],
+      "form": [
+        "Passaggio",
+        "Data",
+        "Esito",
+        "Note"
+      ]
+    }
+  ]
+}
